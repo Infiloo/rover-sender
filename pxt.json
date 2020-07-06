@@ -1,0 +1,21 @@
+{
+    "name": "rover-Sender",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "Rover": "github:freenove/makecode-extension-rover#c7a23421f88a2b51a307dac8e4fbe422a5ab80d9"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}
