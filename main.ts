@@ -165,6 +165,13 @@ input.onButtonPressed(Button.B, function () {
         . # # # .
         . . . . .
         `)
+    basic.showLeds(`
+        . # # # #
+        . # . . #
+        . # . . #
+        # # . # #
+        # # . # #
+        `)
 })
 input.onPinPressed(TouchPin.P1, function () {
     radio.sendNumber(8)
