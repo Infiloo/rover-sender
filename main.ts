@@ -284,6 +284,38 @@ input.onPinPressed(TouchPin.P2, function () {
         . # # # .
         `)
 })
+input.onGesture(Gesture.Shake, function () {
+    radio.sendNumber(13)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . # . .
+        . # # # .
+        `)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . # . .
+        . # # # .
+        . # # # .
+        `)
+    basic.showLeds(`
+        . . . . .
+        . . # . .
+        . # # # .
+        . # # # .
+        . # # # .
+        `)
+    basic.showLeds(`
+        . . # . .
+        . # # # .
+        . # # # .
+        . # # # .
+        . . . . .
+        `)
+    basic.showString("Stop")
+})
 input.onGesture(Gesture.LogoDown, function () {
     radio.sendNumber(3)
     basic.showLeds(`
