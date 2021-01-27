@@ -95,6 +95,78 @@ radio.onReceivedNumber(function (receivedNumber) {
             . . # . .
             `)
     }
+    if (receivedNumber == 11) {
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            # . # . #
+            # . . . #
+            . # # # .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . # . .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . # . .
+            . # # # .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . # . .
+            . # # # .
+            . # # # .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . # . .
+            . # # # .
+            . # # # .
+            . # # # .
+            `)
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            . # # # .
+            . # # # .
+            . . . . .
+            `)
+        basic.showLeds(`
+            . # # # .
+            . # # # .
+            . # # # .
+            . . . . .
+            . . . . .
+            `)
+        basic.showLeds(`
+            . # # # .
+            . # # # .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+        basic.showLeds(`
+            . # # # .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+    }
 })
 input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
