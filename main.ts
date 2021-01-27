@@ -166,6 +166,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             . . . . .
             . . . . .
             `)
+        basic.showIcon(IconNames.Chessboard)
     }
 })
 input.onButtonPressed(Button.A, function () {
@@ -250,6 +251,37 @@ input.onGesture(Gesture.TiltLeft, function () {
         # # # # #
         . # . . .
         . . # . .
+        `)
+})
+input.onPinPressed(TouchPin.P2, function () {
+    radio.sendNumber(12)
+    basic.showLeds(`
+        . . # . .
+        . # . # .
+        . # . # .
+        . # . # .
+        . . # . .
+        `)
+    basic.showLeds(`
+        . # # # .
+        . # . . .
+        . # # # .
+        . # . . .
+        . # . . .
+        `)
+    basic.showLeds(`
+        . # # # .
+        . # . . .
+        . # # # .
+        . # . . .
+        . # . . .
+        `)
+    basic.showLeds(`
+        . . # . .
+        . # # # .
+        # . # . #
+        # . . . #
+        . # # # .
         `)
 })
 input.onGesture(Gesture.LogoDown, function () {
