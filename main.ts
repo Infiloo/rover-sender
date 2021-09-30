@@ -19,23 +19,6 @@ input.onGesture(Gesture.TiltRight, function () {
         . . # . .
         `)
 })
-input.onGesture(Gesture.LogoUp, function () {
-    radio.sendNumber(4)
-    basic.showLeds(`
-        # # . # #
-        # . . . #
-        . . . . .
-        # . . . #
-        # # . # #
-        `)
-    basic.showLeds(`
-        . . # . .
-        . # . # .
-        # . # . #
-        . # . # .
-        . . # . .
-        `)
-})
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 10) {
         basic.showLeds(`
@@ -168,6 +151,23 @@ radio.onReceivedNumber(function (receivedNumber) {
             `)
         basic.showIcon(IconNames.Chessboard)
     }
+})
+input.onGesture(Gesture.LogoUp, function () {
+    radio.sendNumber(4)
+    basic.showLeds(`
+        # # . # #
+        # . . . #
+        . . . . .
+        # . . . #
+        # # . # #
+        `)
+    basic.showLeds(`
+        . . # . .
+        . # . # .
+        # . # . #
+        . # . # .
+        . . # . .
+        `)
 })
 input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
@@ -407,8 +407,178 @@ input.onPinPressed(TouchPin.P1, function () {
     radio.sendNumber(8)
     basic.showString("Batterie")
 })
+input.calibrateCompass()
+basic.showArrow(ArrowNames.North)
+basic.showArrow(ArrowNames.East)
+basic.showArrow(ArrowNames.South)
+basic.showArrow(ArrowNames.West)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . # . . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . # # . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . # # # .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # . . .
+    . # # # .
+    . # . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # # . .
+    . # # # .
+    . # # . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # # # .
+    . # # # .
+    . # # # .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # # # .
+    . . # # .
+    . # # # .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # # # .
+    . # . # .
+    . # # # .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # # # .
+    . # # . .
+    . # # # .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # # # .
+    . # # # .
+    . # # # .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . # # .
+    . # # # .
+    . . # # .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . # .
+    . # # # .
+    . . . # .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . # # # .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . # # . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . # . . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    # . . . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # . . .
+    # . . . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # . . .
+    # . # . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # . . .
+    # . # . .
+    . . . # .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # . . .
+    # . # . #
+    . . . # .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # . # .
+    # . # . #
+    . . . # .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # . # .
+    # . # . #
+    . # . # .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # . # .
+    # . # . #
+    . # . # .
+    . . . . .
+    `)
 radio.setGroup(123)
-basic.showIcon(IconNames.Chessboard)
-basic.forever(function () {
-	
-})
+basic.showIcon(IconNames.Yes)
