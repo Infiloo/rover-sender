@@ -1,5 +1,6 @@
 {
     "name": "rover-Sender",
+    "version": "1.0.0",
     "description": "",
     "dependencies": {
         "core": "*",
